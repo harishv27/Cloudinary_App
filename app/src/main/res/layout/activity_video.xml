@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Button to start video recording -->
+    <Button
+        android:id="@+id/startVideoRecordingButton"
+        android:text="Start Recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Button to stop video recording -->
+    <Button
+        android:id="@+id/stopVideoRecordingButton"
+        android:text="Stop Recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startVideoRecordingButton"
+        android:visibility="gone" />
+
+    <!-- Button to upload video -->
+    <Button
+        android:id="@+id/uploadVideoButton"
+        android:text="Upload Video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stopVideoRecordingButton"
+        android:visibility="gone" />
+
+    <!-- TextView to display status -->
+    <TextView
+        android:id="@+id/displayVideoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadVideoButton"
+        android:text="Status will be displayed here" />
+
+    <!-- GifImageView for recording animation -->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/recordingVideoGif"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/displayVideoText"
+        android:visibility="gone" />
+
+</RelativeLayout>
