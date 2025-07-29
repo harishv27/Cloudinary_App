@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Expert Dashboard</h1>
+    </header>
+
+    <nav>
+        <button onclick="showFiles('images')">Images</button>
+        <button onclick="showFiles('videos')">Videos</button>
+        <button onclick="showFiles('audios')">Audios</button>
+        <button onclick="showFiles('others')">Other Files</button>
+    </nav>
+
+    <div id="gallery" class="gallery">
+        <p>Select a category to view files.</p>
+    </div>
+
+    <footer>
+        <p>Agri Expert - All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
